@@ -42,8 +42,8 @@ export default function _index() {
                     </p>
                 </div>
                 <div className="flex flex-col gap-2 px-10 py-5 border-y border-secondary/40 stripes opacity-60 bg-fixed bg-[size:10px_10px]" />
-                <div className="flex flex-col gap-2 px-10 py-5 border-b border-secondary/40">
-                    <h3 className="text-5xl">
+                <div className="flex flex-col gap-2 px-10 py-5 border-b border-secondary/40 motion-preset-blur-down-md motion-delay-200">
+                    <h3 className="text-5xl motion-preset-focus-lg">
                         Technologies
                     </h3>
                     <div className="grid grid-cols-4 justify-items-center-safe">
@@ -67,7 +67,7 @@ export default function _index() {
                         </TechnologyBox>
                     </div>
                 </div>
-                <div className="flex flex-col gap-2  py-5 border-b border-secondary/40">
+                <div className="flex flex-col gap-2  py-5 border-b border-secondary/40 motion-preset-blur-down-md motion-delay-400">
                     <h3 className="text-5xl px-10">
                         Projects
                     </h3>
@@ -105,6 +105,7 @@ export default function _index() {
                         </Link>
                     </div>
                 </div>
+                <div className="flex flex-col gap-2 px-10 py-5 border-y border-secondary/40 stripes opacity-60 bg-fixed bg-[size:10px_10px]" />
             </div>
             <div className="hidden lg:block stripes mask-radial-from-0% mask-radial-at-left mask-radial-farthest-side" />
         </main>
