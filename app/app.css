@@ -1,15 +1,28 @@
 @import "tailwindcss";
 
+@plugin "tailwindcss-motion";
+
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-sans: "Tomorrow", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --color-text: rgb(241, 242, 244);
+    --color-background: rgb(3, 4, 7);
+    --color-primary: rgb(136, 169, 246);
+    --color-secondary: rgb(60, 76, 114);
+    --color-accent: rgb(246, 108, 106);
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+    @media (prefers-color-scheme: dark) {
+        color-scheme: dark;
+    }
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+.stripes {
+    background: repeating-linear-gradient(45deg,
+            var(--color-secondary) 0,
+            var(--color-secondary) 2px,
+            transparent 2px,
+            transparent 10px);
 }
