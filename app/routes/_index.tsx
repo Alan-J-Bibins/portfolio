@@ -76,7 +76,7 @@ export default function _index() {
                             <div className="lg:mask-radial-at-right lg:mask-radial-to-95% lg:mask-radial-farthest-corner">
                                 <img src="ec.jpg" />
                             </div>
-                            <div>
+                            <div className="p-4">
                                 <h1 className="text-xl">ExamCooker</h1>
                                 <br />
                                 <div className="flex flex-wrap gap-2">
@@ -90,7 +90,7 @@ export default function _index() {
                             <div className="lg:mask-radial-at-right lg:mask-radial-to-95% lg:mask-radial-farthest-corner">
                                 <img src="styq.png" />
                             </div>
-                            <div>
+                            <div className="p-4">
                                 <h1 className="text-xl">StyQ</h1>
                                 <br />
                                 <div className="flex flex-wrap gap-2">
